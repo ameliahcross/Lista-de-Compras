@@ -1,0 +1,15 @@
+/Users/oriontekdesign/Desktop/lista de compras en c#/bin/Debug/net6.0/lista de compras en c#
+/Users/oriontekdesign/Desktop/lista de compras en c#/bin/Debug/net6.0/lista de compras en c#.deps.json
+/Users/oriontekdesign/Desktop/lista de compras en c#/bin/Debug/net6.0/lista de compras en c#.runtimeconfig.json
+/Users/oriontekdesign/Desktop/lista de compras en c#/bin/Debug/net6.0/lista de compras en c#.dll
+/Users/oriontekdesign/Desktop/lista de compras en c#/bin/Debug/net6.0/lista de compras en c#.pdb
+/Users/oriontekdesign/Desktop/lista de compras en c#/obj/Debug/net6.0/lista de compras en c#.csproj.AssemblyReference.cache
+/Users/oriontekdesign/Desktop/lista de compras en c#/obj/Debug/net6.0/lista de compras en c#.GeneratedMSBuildEditorConfig.editorconfig
+/Users/oriontekdesign/Desktop/lista de compras en c#/obj/Debug/net6.0/lista de compras en c#.AssemblyInfoInputs.cache
+/Users/oriontekdesign/Desktop/lista de compras en c#/obj/Debug/net6.0/lista de compras en c#.AssemblyInfo.cs
+/Users/oriontekdesign/Desktop/lista de compras en c#/obj/Debug/net6.0/lista de compras en c#.csproj.CoreCompileInputs.cache
+/Users/oriontekdesign/Desktop/lista de compras en c#/obj/Debug/net6.0/lista de compras en c#.dll
+/Users/oriontekdesign/Desktop/lista de compras en c#/obj/Debug/net6.0/refint/lista de compras en c#.dll
+/Users/oriontekdesign/Desktop/lista de compras en c#/obj/Debug/net6.0/lista de compras en c#.pdb
+/Users/oriontekdesign/Desktop/lista de compras en c#/obj/Debug/net6.0/lista de compras en c#.genruntimeconfig.cache
+/Users/oriontekdesign/Desktop/lista de compras en c#/obj/Debug/net6.0/ref/lista de compras en c#.dll
