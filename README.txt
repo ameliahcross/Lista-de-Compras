@@ -1,6 +1,6 @@
 OBJETIVO:
 
-Crear un programa que almacene listas de compras, dividir las compras por categoría ejemplo; superMercado, ropas y calzados
+Crear un programa que almacene listas de compras, dividir las compras por categoría ejemplo; supermercado, ropas y calzados
 
     - Se debe agregar, eliminar, editar y listar en cada sección. 
     - Debe de tener un login con una lista de usuarios para entrar
