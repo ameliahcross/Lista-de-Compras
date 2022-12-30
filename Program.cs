@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 
-namespace AmeliaHCross;
+
+namespace @AmeliaHCross;
 class Program
 {
     static void Main(string[] args)
@@ -11,39 +13,46 @@ class Program
         List<string> comprasSuper = new List<string>() {};
         List<string> comprasRopa = new List<string>() {};
         List<string> comprasMiscelaneos = new List<string>() {};
-        List<string> usuarios = new List<string>() {"Amelia", "José", "María", "Luis"};
+        List<string> usuarios = new List<string>() {"Amelia", "José", "María", "Luis", "Invitado"};
+        string newItem;
         string usuario;
         bool registrado = true;
         int opcion;
         int switchOpt;
-        string newItem;
+        
+        // Para poder acceder con su usuario en minúsculas
+        var usersLowCase = usuarios.Select(item => item.ToLower());
+        usersLowCase.ToList();
 
      // VALIDACIÓN DE USUARIO
         do
         {
+            System.Console.WriteLine("                               ");
             System.Console.WriteLine("-------------------------------");
             System.Console.WriteLine("---   LISTA DE COMPRAS    -----");
             System.Console.WriteLine("-------------------------------");
             System.Console.WriteLine("                               ");
             System.Console.WriteLine("Ingrese su usuario: ");
+            System.Console.WriteLine("  [Amelia]  [José]  [María]  [Luis]  [Invitado]  ");
+
             usuario = Console.ReadLine();
 
-            if (usuarios.Contains(usuario))
+            if (usuarios.Contains(usuario) || usersLowCase.Contains(usuario))
             {   Console.Clear();
                 registrado = true;
                 System.Console.WriteLine("Bienvenido/a " + usuario);
             } 
-            if (string.IsNullOrWhiteSpace(usuario))
+            else if (string.IsNullOrWhiteSpace(usuario))
             {   Console.Clear();
                 registrado = false;
                 System.Console.WriteLine("Ha introducido un espacio en blanco. Intente de nuevo");
             } 
-            if (!usuarios.Contains(usuario) && !string.IsNullOrWhiteSpace(usuario))
+            else if (!usuarios.Contains(usuario) && !string.IsNullOrWhiteSpace(usuario))
             {   Console.Clear();
                 registrado = false;
                 System.Console.WriteLine("Usuario no encontrado. No puede acceder. Intente de nuevo");
             }
-        } while (!registrado);
+        } while (registrado == false);
     // SI SE INGRESA UN USUARIO EXISTENTE, SE DESARROLLA EL PROGRAMA:
         System.Console.WriteLine("[ ENTER ] (Presione cualquier tecla...)");
         Console.ReadKey();
@@ -237,7 +246,7 @@ class Program
                             break;
 
                             case 3:
-                            System.Console.WriteLine("Calzados");
+                            System.Console.WriteLine("MISCELANEOS");
                             Console.WriteLine("Seleccione una opción: ");
                             Console.WriteLine(" 1-  Agregar elemento");
                             Console.WriteLine(" 2-  Ver lista");
@@ -363,11 +372,4 @@ class Program
             } while (!salir);
 
     }
-    // static void salirDeAqui(){
-    //     Console.Clear();
-    //     Console.WriteLine("                               ");
-    //     Console.WriteLine("¡HASTA LUEGO, " + usuario + "! ");
-    //     Console.WriteLine("                               ");
-    //     salir=true;
-    // }
 }
